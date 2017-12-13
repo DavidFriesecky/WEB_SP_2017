@@ -1,0 +1,13 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wellUser {
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+    opacity: 0;
+}
