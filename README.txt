@@ -2,17 +2,10 @@
 
 
 
-ckeditor \
-	- knihovna CK editoru
-controller \
-	- sada kontrolerù s pøíponou .class.php, na které se odkazuje index.php
-css \
-		- kaskádové styly
-form \		- sada kontrolerù s pøíponou .php, na které index.php vùbec nesahá
-htmlpurifier \
-	- knihovna HTML Purifier
-model \
-		- sada modelù, které komunikují s databází
-view \
-
-		- sada pohledù, pro vykreslení HTML kódu
+ckeditor \	- knihovna CK editoru
+controller \	- sada kontrolerÅ¯ s pÅ™Ã­ponou .class.php, na kterÃ© se odkazuje index.php
+css \		- kaskÃ¡dovÃ© styly
+form \		- sada kontrolerÅ¯ s pÅ™Ã­ponou .php, na kterÃ© index.php vÅ¯bec nesahÃ¡
+htmlpurifier \	- knihovna HTML Purifier
+model \	- sada modelÅ¯, kterÃ© komunikujÃ­ s databÃ¡zÃ­
+view \		- sada pohledÅ¯, pro vykreslenÃ­ HTML kÃ³du
