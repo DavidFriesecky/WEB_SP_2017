@@ -196,7 +196,7 @@ class ModCK extends db_pdo {
         if (!isset($titulek) || $titulek == "") {
             $x = 1;
             do {
-                $titulek = $_SESSION["jmeno"] . "('$x')";
+                $titulek = $_SESSION["jmeno"] . " ($x)";
                 $prispevek = $this->prispevkyInfoTit($titulek);
                 $x++;
             } while ($prispevek);
@@ -208,7 +208,7 @@ class ModCK extends db_pdo {
         if ($prispevek) {
             $x = 1;
             do {
-                $titulek .= "('$x')";
+                $titulek .= " ($x)";
                 $prispevek = $this->prispevkyInfoTit($titulek);
                 $x++;
             } while ($prispevek);

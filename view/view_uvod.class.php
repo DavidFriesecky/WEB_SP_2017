@@ -17,7 +17,7 @@ class ViewUvod {
         $i = 0;
 
         if (isset($arrPrispevky) && $arrPrispevky != null) {
-            foreach ($arrPrispevky as $index1 => $item) {
+            foreach ($arrPrispevky as $index => $item) {
                 if ($item["publikovan"] == 2) {
                     $titulek = $item["titulek"];
                     $jmenoP = $item["jmeno"];

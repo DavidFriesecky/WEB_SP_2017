@@ -45,6 +45,7 @@ class ViewSAdminP {
                                     <ul class='dropdown-menu' role='menu'>
                                         <li><a href='index.php?page=6&id=$idP'>Přiřadit recenzenty</a></li>
                                         <li class='divider'></li>
+                                        <li><a href='form/settingP.php?id=$idP&idPublic=1'>Do recenzního řízení</a></li>
                                         <li><a href='form/settingP.php?id=$idP&idPublic=2'>Publikovat</a></li>
                                         <li><a href='form/settingP.php?id=$idP&idPublic=3'>Zamítnout</a></li>
                                     </ul>
