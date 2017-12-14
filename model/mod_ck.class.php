@@ -218,7 +218,7 @@ class ModCK extends db_pdo {
     }
 
     /**
-     *  Vlozi data recenze do databaze
+     *  Vlozi dat recenze do databaze
      *  @param string $text text recenze
      *  @param int $stav stav
      *  @param int $id_hodnoceni ID recenze
@@ -243,6 +243,21 @@ class ModCK extends db_pdo {
         $where = array();
         $where[] = array("column" => "id_hodnoceni", "value" => "$id_hodnoceni", "symbol" => "=");
         $this->DBUpdate(TABLE_HODNOCENI, $column, $where);
+        return true;
+    }
+
+    /**
+     *  Zalozeni recenze
+     *  @param string $text text recenze (null)
+     *  @param date $datum datum (null)
+     *  @param int $stav stav (0)
+     *  @param int $id_uzivatel ID uzivatele
+     *  @param int $id_prispevky ID prispevku
+     *  @return bool, jestli se podarilo data pridat
+     */
+    public function insertTextRecenzentNew($text, $datum, $stav, $id_uzivatel, $id_prispevky) {
+        $item = array("text" => $text, "datum" => $datum, "stav" => $stav, "id_uzivatel" => $id_uzivatel, "id_prispevky" => $id_prispevky);
+        $this->DBInsert(TABLE_HODNOCENI, $item);
         return true;
     }
 

@@ -15,6 +15,6 @@ $idD = $_GET["id"];
 
 $id = $purifier->purify($idD);
 
-header("location: ../index.php?page=3&id=$id");
+header("location: ../index.php?page=3&idP=$id");
 
 ?>

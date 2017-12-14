@@ -26,7 +26,7 @@ foreach ($arrRecenzenti as $index => $item) {
     $userIf = $_POST[$idPom];
     print_r($userIf);
     if ($userIf == "true") {
-        $ck->insertTextRecenzent(null, null, 0, $item["id_uzivatel"], $id);
+        $ck->insertTextRecenzentNew(null, null, 0, $item["id_uzivatel"], $id);
     }
 }
 

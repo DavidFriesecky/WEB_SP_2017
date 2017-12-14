@@ -31,7 +31,6 @@ class ConSAdminP {
         $id = null;
         if (isset($_GET["id"])) $id = $_GET["id"];
 
-
         return $viewSAdminP->getTemplate($_SESSION["jmeno"], $arrPrispevky, $arrRecenze, $arrRecenzenti, $id);
     }
 }
